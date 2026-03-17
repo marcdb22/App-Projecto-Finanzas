@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  color: #333;
+  padding: 40px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  padding: 40px;
+  width: 760px;
+  max-width: 100%;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #512da8;
+  font-size: 1.8rem;
+}
+
+.form-card, .list-card {
+  background: transparent;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #333;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 10px;
+  color: #555;
+}
+
+input {
+  background-color: #eee;
+  border: none;
+  margin: 8px 0;
+  padding: 12px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 100%;
+  outline: none;
+}
+
+button {
+  background-color: #512da8;
+  color: #fff;
+  font-size: 12px;
+  padding: 12px 35px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #452485;
+}
+
+.logout-btn {
+  background-color: transparent;
+  color: #ff4d4d;
+  border: 2px solid #ff4d4d;
+  font-size: 12px;
+  padding: 8px 16px;
+  margin-top: 0;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #ff4d4d;
+  color: #fff;
+}
+
+/* Lista de categorías */
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+li {
+  background: #f9f9f9;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.04);
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+.cat-nombre {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.cat-limite {
+  background: #512da8;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
